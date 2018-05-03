@@ -11,8 +11,7 @@ namespace Lista_03_while
         {
             double peso = 0;
             int somaPessoas = 0;
-            /*Console.Write("Peso: ");
-            double peso = Convert.ToDouble(Console.ReadLine());*/
+            
             while ((peso >= 0) && (peso <= 300))
             {
             
@@ -21,6 +20,7 @@ namespace Lista_03_while
                 
                 somaPessoas = somaPessoas + 1;
             }
+            
             Console.WriteLine(somaPessoas + " Pessoas disseram seu peso");        
         }
     }

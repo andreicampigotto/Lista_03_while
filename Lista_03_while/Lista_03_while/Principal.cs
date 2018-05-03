@@ -12,7 +12,8 @@ namespace Lista_03_while
         {
             //new Exercicio01();
             //new Exercicio02();
-            new Exercicio03();
+            //new Exercicio03();
+            new Exercicio04();
         }
     }
 }
