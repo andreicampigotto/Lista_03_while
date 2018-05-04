@@ -11,12 +11,12 @@ namespace Lista_03_while
         {
             double numero1 = 0;
             double numero2 = 0;
+            int opcao = 0;
             
             Console.Write("Digite o primeiro número: ");
             numero1 = Convert.ToDouble(Console.ReadLine());
             Console.Write("Digite o segundo número: ");
             numero2 = Convert.ToDouble(Console.ReadLine());
-
 
             Console.WriteLine("\n ------------------------ " + 
                               "\n|     1    |     SOMA    |" +
@@ -30,13 +30,34 @@ namespace Lista_03_while
                               "\n|     5    |     SAIR    |" +
                               "\n ------------------------ ");
 
-            while(5 != ' ')
-            {
-                if (1 == ' ')
-                {
-                    numero2 + numero1;
-                }
 
+            Console.Write("Escolha uma opção: ");
+            opcao = Convert.ToInt32(Console.ReadLine());
+
+            while(opcao != 5)
+            {
+                if (opcao == 1)
+                {
+                    double somaNumeros = numero1 + numero2;
+                    Console.WriteLine(somaNumeros);
+                }
+                else if (opcao == 2)
+                {
+                    double subtracaoNumeros = numero1 - numero2;
+                    Console.WriteLine(subtracaoNumeros);
+                }
+                else if (opcao == 3)
+                {
+                    double multiplicacaoNumeros = numero1 * numero2;
+                    Console.WriteLine(multiplicacaoNumeros);
+                }
+                else 
+                {
+                    double divisaoNumeros = numero1 / numero2;
+                    Console.WriteLine( divisaoNumeros);
+             
+                }
+                break;
             }
         }
     }
