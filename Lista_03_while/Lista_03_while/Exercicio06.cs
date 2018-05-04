@@ -9,6 +9,14 @@ namespace Lista_03_while
     {
         public Exercicio06()
         {
+            int opcao = 0;
+            int bolos = 0;
+            int doces = 0;
+            int sanduiches = 0;
+            int pizzas = 0;
+            double somaProdutos = 0;
+            double valor = 0;
+
             Console.WriteLine(
 @" CARDÁPIO PADARIA DO JOÃO 
  --------------------------------------------------------------------
@@ -49,6 +57,22 @@ namespace Lista_03_while
  --------------------------------------------------------------------
 ");
             Console.Write("Escolha uma opção: ");
+            opcao = Convert.ToInt32(Console.ReadLine());
+
+            while (opcao > 16 && opcao <0)
+            {
+                if (opcao == 1)
+                {
+                    bolos = bolos + 1;
+
+
+                }
+                else if (opcao == 2)
+                {
+
+                }
+
+            }
         }
     }
 }
