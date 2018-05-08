@@ -14,9 +14,9 @@ namespace Lista_03_while
             int doces = 0;
             int sanduiches = 0;
             int pizzas = 0;
-            double somaProdutos = 0;
-            double valor = 0;
-
+            int produtos = 0;
+            double somaTotal = 0; 
+          
             Console.WriteLine(
 @" CARDÁPIO PADARIA DO JOÃO 
  --------------------------------------------------------------------
@@ -53,26 +53,107 @@ namespace Lista_03_while
 |--------------------------------------------------------------------|
 |   15   |   PIZZAS   | PORTUGUESA                        |R$  27,50 |
 |--------------------------------------------------------------------|
-|   16                |               SAIR                           |
+|   16                |                  SAIR                        |
  --------------------------------------------------------------------
 ");
             Console.Write("Escolha uma opção: ");
             opcao = Convert.ToInt32(Console.ReadLine());
 
-            while (opcao > 16 && opcao <0)
+            while (opcao != 16)
             {
+
+                  produtos = produtos +1;
+                
                 if (opcao == 1)
                 {
                     bolos = bolos + 1;
-
-
+                    somaTotal = somaTotal + 29.50;
+                  
                 }
                 else if (opcao == 2)
                 {
-
+                    bolos = bolos + 1;
+                    somaTotal = somaTotal + 2.00; 
                 }
+                else if (opcao == 3)
+                {
+                    bolos = bolos + 1;
+                    somaTotal = somaTotal + 29.23;
+                }
+                else if (opcao == 4)
+                {
+                    bolos = bolos + 1;
+                    somaTotal = somaTotal + 7.10;
+                }
+                else if (opcao == 5)
+                {
+                    bolos = bolos + 1;
+                    somaTotal = somaTotal + 19.33;
+                }
+                else if (opcao == 6)
+                {
+                    doces = doces + 1;
+                    somaTotal = somaTotal + 17.71;
+                }
+                else if (opcao == 7)
+                {
+                    doces = doces + 1;
+                    somaTotal = somaTotal + 4.82;
+                }
+                else if (opcao == 8)
+                {
+                    sanduiches = sanduiches + 1;
+                    somaTotal = somaTotal + 21.16;
+                }
+                else if (opcao == 9)
+                {
+                    sanduiches = sanduiches + 1;
+                    somaTotal = somaTotal + 12.70;
+                }
+                else if (opcao == 10)
+                {
+                    sanduiches = sanduiches + 1;
+                    somaTotal = somaTotal + 19.70;
+                }
+                else if (opcao == 11)
+                {
+                    sanduiches = sanduiches + 1;
+                    somaTotal = somaTotal + 28.22;
+                }
+                else if (opcao == 12)
+                {
+                    pizzas = pizzas + 1;
+                    somaTotal = somaTotal + 8.98;
+                }
+                else if (opcao == 13)
+                {
+                    pizzas = pizzas + 1;
+                    somaTotal = somaTotal + 0.42;
+                }
+                else if (opcao == 14)
+                {
+                    pizzas = pizzas + 1;
+                    somaTotal = somaTotal + 18.36;
+                }
+                else if (opcao == 15) 
+                {
+                    pizzas = pizzas + 1;
+                    somaTotal = somaTotal + 27.50;
+                }
+                Console.Write("Escolha uma opção: ");
+                opcao = Convert.ToInt32(Console.ReadLine());
+           }
+            
+           
+            double mediaProdutos = somaTotal / produtos;
+            
+            Console.WriteLine("Você comprou " + bolos + " bolos" +
+                            "\nVocê comprou " + doces + " doces" +
+                            "\nVocê comprou " + sanduiches + " sanduiches" +
+                            "\nVocê comprou " + pizzas + " pizzas" + 
+                            "\nVocê comprou " + produtos + " itens" + 
+                            "\nVocê gastou em média: " + mediaProdutos);
 
-            }
         }
     }
 }
