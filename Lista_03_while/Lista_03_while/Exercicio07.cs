@@ -12,7 +12,7 @@ namespace Lista_03_while
             int quatidadeAtletas = 0;
             string nomes = "";
             string maiorNome = "";
-            string menorNome = "usahduisahuidhsauidhuisahduisahdia";
+            string menorNome = "usahduisahuidhsauidhuisahduisahdiasuahsuahushaushuahs";
             int idade = 0;
             double peso = 0, maiorPeso = int.MinValue, menorPeso = int.MaxValue;
             char sexo = ' ';
@@ -22,10 +22,17 @@ namespace Lista_03_while
             int cartaoVermelho = 0, maiorCartaoVermelhos = int.MinValue, menorCartaoVermelhos = int.MinValue;
             int sexoM = 0;
             int sexoF = 0;
-
-            Console.Write(" ======================================================= ");
+            string nomesMenorPeso = "";
+            string nomesMaiorAltura = "";
+            string nomesmenorCartaoAmarelos = "";
+            string nomesMaiorPeso = "";
+            string nomesMaiorCartaoVermelhos = "";
+            string nomesMaiorCartaoAmarelos = "";
+            string nomesMenorCartaoVermelhos = "";
+            Console.Write(" ======================================================= "+
+                          " ======================================================= ");
             
-            while (quatidadeAtletas < 22)
+            while (quatidadeAtletas < 3)
             {
                 Console.Write("\nDigite o nome do atleta: ");
                 nomes = Console.ReadLine();
@@ -63,30 +70,37 @@ namespace Lista_03_while
                 if (peso < menorPeso)
                 {
                     menorPeso = peso;
+                    nomesMenorPeso = nomes;
                 }
                 if (altura > maiorAltura)
                 {
                     maiorAltura = altura;
+                    nomesMaiorAltura = nomes;
                 }
                 if (cartaoAmaelo < menorCartaoAmarelos)
                 {
                     menorCartaoAmarelos = cartaoAmaelo;
+                    nomesmenorCartaoAmarelos = nomes;
                 }
                 if (peso > maiorPeso)
                 {
                     maiorPeso = peso;
+                    nomesMaiorPeso = nomes;
                 }
                 if (cartaoVermelho > maiorCartaoVermelhos)
                 {
                     maiorCartaoVermelhos = cartaoVermelho;
+                    nomesMaiorCartaoVermelhos = nomes;
                 }
                 if (cartaoAmaelo > maiorCartaoAmarelos)
                 {
                     maiorCartaoAmarelos = cartaoAmaelo;
+                    nomesMaiorCartaoAmarelos = nomes;
                 }
-                if (cartaoAmaelo < menorCartaoVermelhos)
+                if (cartaoVermelho < menorCartaoVermelhos)
                 {
-                    menorCartaoAmarelos = cartaoAmaelo;
+                    menorCartaoVermelhos = cartaoVermelho;
+                    nomesMenorCartaoVermelhos = nomes;
                 }
 
                 if (sexo == 'm')
@@ -98,8 +112,17 @@ namespace Lista_03_while
                     sexoF++;
                 }
             }
-            Console.WriteLine("\nTem " + sexoF + " jogadores do sexo Feminino" +
-                              "\nTem " + sexoM + " jogadores do sexo Masculino");
+            Console.WriteLine("\nJogador com menor peso: " + nomesMenorPeso +" " + menorPeso + " Kg" +
+                              "\nJogador com a maior altura: " +nomesMaiorAltura + " " + maiorAltura + " cm" +
+                              "\nJogador com maior nome: " + maiorNome + 
+                              "\nTem " + sexoF + " jogadores do sexo Feminino" +
+                              "\nTem " + sexoM + " jogadores do sexo Masculino" +
+                              "\nJogador com menor quantidade de cartão amarelo recebido: " + nomesmenorCartaoAmarelos + " com " + menorCartaoAmarelos + " cartões" + 
+                              "\nJogador com menor nome: " + menorNome + 
+                              "\nJogador com maior peso: " + nomesMaiorPeso + " " + maiorPeso + " Kg"+
+                              "\nJogador com maior quantidade de cartão vermelho: " + nomesMaiorCartaoVermelhos + " " + maiorCartaoVermelhos + " cartões" + 
+                              "\nJogador com a maior quantidade de cartão amarelo recebido: " + nomesMaiorCartaoAmarelos + " " + maiorCartaoAmarelos + " cartões" + 
+                              "\nJogador com a menor quantidade de cartão vermelho recebido: " + nomesMenorCartaoVermelhos + " " + menorCartaoVermelhos + " cartões");
         }
     }
 }
