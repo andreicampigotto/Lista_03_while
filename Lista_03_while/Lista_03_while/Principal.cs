@@ -17,6 +17,7 @@ namespace Lista_03_while
             //new Exercicio05();
             //new Exercicio06();
             new Exercicio07();
+            //new Exercicio08();
         }
     }
 }
