@@ -57,7 +57,7 @@ namespace Lista_03_while
                     Console.WriteLine( divisaoNumeros);
              
                 }
-                //break;
+                break;
             }
         }
     }

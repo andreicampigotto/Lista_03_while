@@ -9,12 +9,17 @@ namespace Lista_03_while
     {
         public Exercicio09()
         {
+            int atual = 0;
+            int tamanhoPalavra = 0;
             string leitura = " ";
             char aux = ' ';
-            Console.Write("Digite aqui: ");
+            Console.Write("Digite aqui: " + leitura.Length);
             leitura = Console.ReadLine();
+            tamanhoPalavra = leitura.Length;
+            
 
-            while (){
+            while (atual != tamanhoPalavra){
+
 
             }
         }
