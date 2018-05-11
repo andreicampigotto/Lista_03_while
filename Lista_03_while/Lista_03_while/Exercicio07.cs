@@ -63,40 +63,48 @@ namespace Lista_03_while
                 {
                     maiorNome = nomes;
                 }
+                
                 if (nomes.Length < menorNome.Length)
                 {
                     menorNome = nomes;
                 }
+                
                 if (peso < menorPeso)
                 {
                     menorPeso = peso;
                     nomesMenorPeso = nomes;
                 }
+                
                 if (altura > maiorAltura)
                 {
                     maiorAltura = altura;
                     nomesMaiorAltura = nomes;
                 }
+                
                 if (cartaoAmaelo < menorCartaoAmarelos)
                 {
                     menorCartaoAmarelos = cartaoAmaelo;
                     nomesmenorCartaoAmarelos = nomes;
                 }
+                
                 if (peso > maiorPeso)
                 {
                     maiorPeso = peso;
                     nomesMaiorPeso = nomes;
                 }
+                
                 if (cartaoVermelho > maiorCartaoVermelhos)
                 {
                     maiorCartaoVermelhos = cartaoVermelho;
                     nomesMaiorCartaoVermelhos = nomes;
                 }
+                
                 if (cartaoAmaelo > maiorCartaoAmarelos)
                 {
                     maiorCartaoAmarelos = cartaoAmaelo;
                     nomesMaiorCartaoAmarelos = nomes;
                 }
+                
                 if (cartaoVermelho < menorCartaoVermelhos)
                 {
                     menorCartaoVermelhos = cartaoVermelho;
@@ -107,6 +115,7 @@ namespace Lista_03_while
                 {
                     sexoM++;
                 }
+                
                 if (sexo == 'f')
                 {
                     sexoF++;
