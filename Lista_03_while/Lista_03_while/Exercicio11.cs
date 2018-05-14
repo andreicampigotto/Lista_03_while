@@ -22,6 +22,10 @@ namespace Lista_03_while
     @"Ao finalizar digite sair.
 Digite o nome do prduto: ");
                 nome = Console.ReadLine();
+                if (nome == "sair")
+                {
+                    break;
+                }
                 Console.Write("Digite o valor: ");
                 valor = Convert.ToDouble(Console.ReadLine());
                 Console.Write("Digite a quantidade: ");
