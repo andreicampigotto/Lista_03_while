@@ -22,15 +22,19 @@ namespace Lista_03_while
     @"Ao finalizar digite sair.
 Digite o nome do prduto: ");
                 nome = Console.ReadLine();
+                
                 if (nome == "sair")
                 {
                     break;
                 }
+                
                 Console.Write("Digite o valor: ");
                 valor = Convert.ToDouble(Console.ReadLine());
                 Console.Write("Digite a quantidade: ");
                 qtda = Convert.ToInt32(Console.ReadLine());
+                Console.Clear();
             }
+
                 double valorTotal = valor * qtda;
                 double desconto = valorTotal * 0.05;
                 double valorPagar = valorTotal - desconto;
