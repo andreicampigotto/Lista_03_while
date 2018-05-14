@@ -9,19 +9,19 @@ namespace Lista_03_while
     {
         public Exercicio09()
         {
-            int atual = 0;
-            int tamanhoPalavra = 0;
-            string leitura = " ";
-            char aux = ' ';
-            Console.Write("Digite aqui: " + leitura.Length);
-            leitura = Console.ReadLine();
-            tamanhoPalavra = leitura.Length;
-            
+            Console.Write("Digite aqui: ");
+            string palavra = Console.ReadLine();
+            //string palavraToLower = palavra.ToLower();
+            int contadorPalavra = palavra.Length;
+            int contadorLetras = 0;
 
-            while (atual != tamanhoPalavra){
-
-
+            while (contadorLetras < contadorPalavra)
+            {
+                Console.WriteLine(palavra[contadorLetras]);
+                contadorLetras++;
             }
+
+            
         }
     }
 }
