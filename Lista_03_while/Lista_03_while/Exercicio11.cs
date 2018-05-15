@@ -12,6 +12,9 @@ namespace Lista_03_while
             string nome = " ";
             double valor = 0;
             int qtda = 0;
+            double valorTotal = 0;
+            double desconto = 0;
+            double valorPagar = 0;
 
 
 
@@ -30,14 +33,15 @@ Digite o nome do prduto: ");
                 
                 Console.Write("Digite o valor: ");
                 valor = Convert.ToDouble(Console.ReadLine());
+
                 Console.Write("Digite a quantidade: ");
                 qtda = Convert.ToInt32(Console.ReadLine());
                 Console.Clear();
+                valorTotal += valor * qtda;
             }
 
-                double valorTotal = valor * qtda;
-                double desconto = valorTotal * 0.05;
-                double valorPagar = valorTotal - desconto;
+                desconto = valorTotal * 0.05;
+                valorPagar = valorTotal - desconto;
 
             Console.WriteLine("Seu total é de: " + valorTotal +
                             "\nSeu desconto é de : " + desconto +
